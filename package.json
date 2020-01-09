@@ -1,0 +1,36 @@
+{
+  "name": "create-react-app",
+  "version": "2.0.0",
+  "private": true,
+  "homepage": "/release/shop",
+  "dependencies": {
+    "@types/qs": "^6.5.3",
+    "antd-mobile": "^2.0.0",
+    "axios": "^0.19.0",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "qs": "^6.8.0",
+    "react": "^16.9.0",
+    "react-clipboard.js": "^2.0.13",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "1.0.13",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.2.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "postcss-px-to-viewport": "^1.1.1",
+    "react-app-rewire-postcss": "^3.0.2",
+    "react-app-rewired": "^1.2.9"
+  }
+}

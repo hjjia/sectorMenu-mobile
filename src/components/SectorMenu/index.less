@@ -1,0 +1,64 @@
+@centerIconSize: 30px;
+
+.flex(@justify: flex-start, @align: center) {
+    justify-content: @justify;
+    align-items: @align;
+    display: flex;
+}
+.sector-menu-wrapper {
+    position: relative;
+    width: @centerIconSize;
+    margin: auto;
+
+    .center-icon {
+        .flex(center);
+        width: @centerIconSize;
+        height: @centerIconSize;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        cursor: pointer;
+    }
+
+    .sector-item {
+        position: absolute;
+        .flex(center);
+        width: @centerIconSize;
+        height: @centerIconSize;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        color: white;
+        top: 0;
+        left: 0;
+        transition: all linear 0.5s;
+        transform: translate(0, 0);
+        // display: none;
+        visibility: hidden;
+    }
+
+    .sector-list {
+        &.sector-list-active {
+            transition: all linear 0.5s;
+            .sector-item {
+                .flex(center);
+                transition: all linear 0.5s;
+                transform: translate(0, 0);
+                visibility: visible;
+
+                &:first-child {
+                    transform: translate(0, -@centerIconSize * 1.5);
+                }
+        
+                &:nth-child(2) {
+                    transform: translate(-@centerIconSize * 1.5, 0);
+                }
+        
+                &:nth-child(3) {
+                    transform: translate(0, @centerIconSize * 1.5);
+                    
+                }
+            }
+        }
+    }
+}

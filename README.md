@@ -1,2 +1,2 @@
 # sectorMenu-mobile
-mobile sectorMenu
+移动端扇形菜单，欢迎pr
